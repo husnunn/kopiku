@@ -1,0 +1,154 @@
+<template>
+  <div class="page">
+     <!-- ICON MENU BAWAH -->
+     <div class="toolbar tabbar-icons toolbar-bottom" style="background-color: rgb(255, 255, 255)">
+      <div class="toolbar-inner">
+        <a href="/" class="aktif">
+          <i class="icon f7-icons md-only">house</i>
+          
+        </a>
+        <a href="/menulist/" class="aktif">
+          <i class="icon f7-icons md-only">rectangle_grid_2x2</i>
+          
+        </a>
+        <a href="/keranjang/" class="aktif">
+          <i class="icon f7-icons md-only">cart</i>
+          
+        </a>
+        <a href="/favorit/" class="aktif">
+          <i class="icon f7-icons md-only">bookmark</i>
+          
+        </a>
+        <a href="/setting/" class="atf">
+          <i class="icon f7-icons md-only">gear_alt</i>
+          
+        </a>
+      </div>
+    </div>
+    <!-- ICON BAWAH END -->
+    <!-- NAVBAR -->
+    <!-- NAVBAR ATAS -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left">
+          <div class="judul" style="padding: 0 !important">
+            Welcome <br />
+            <div class="judul2" id="username">Ni'am</div>
+          </div>
+        </div>
+        <div class="title"></div>
+        <div class="right">
+          <a href="#" class="link popover-open" data-popover=".popover-menu"><i class="icon f7-icons color-black" style="font-size: 45px; margin-top: 20px">person_circle</i></a>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+    <div class="page-content">
+        <!-- POPOVER -->
+        <div class="popover popover-menu">
+          <div class="popover-angle"></div>
+          <div class="popover-inner">
+            <div class="list">
+              <ul>
+                <li><a href="/profil/" class="list-button popover-close">My Profile</a></li>
+                <li><a href="/Contact/" class="list-button popover-close">Contact</a></li>
+                <li><a href="/Setting/" class="list-button popover-close">Setting</a></li>
+                <li><a href="#" id="logout" class="list-button popover-close logout">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- POPOVER END -->
+
+        <!-- Setting -->
+        <div class="block-title" style="color: tomato !important;">Account</div>
+        <div class="list list-outline-ios list-strong-ios list-dividers-ios">
+          <ul>
+            <li>
+              <a class="item-link item-content" href="/profil/">
+                <div class="item-media"><i class="icon f7-icons" style="color: tomato;">person_fill</i></div>
+                <div class="item-inner">
+                  <div class="item-title">Edit Profile</div>
+
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link item-content">
+                <div class="item-media"><i class="icon f7-icons" style="color: tomato;">lock_fill</i></div>
+                <div class="item-inner">
+                  <div class="item-title">Change Password</div>
+                  <!-- <div class="item-after">Cleaner</div> -->
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="block-title" style="color: tomato !important;">Setting</div>
+        <div class="list list-outline-ios list-strong-ios list-dividers-ios">
+          <ul>
+            <li>
+              <a class="item-link item-content" href="/profil/">
+                <div class="item-media"><i class="icon f7-icons" style="color: tomato;">bell_fill</i></div>
+                <div class="item-inner">
+                  <div class="item-title">Notification</div>
+
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link item-content">
+                <div class="item-media"><i class="icon f7-icons" style="color: tomato;">text_bubble_fill</i></div>
+                <div class="item-inner">
+                  <div class="item-title">Language</div>
+                  <!-- <div class="item-after">Cleaner</div> -->
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="block-title" style="color: tomato !important;">Connect Sosial Account</div>
+        <div class="list list-outline-ios list-strong-ios list-dividers-ios">
+          <ul>
+            <li>
+              <a class="item-link item-content" href="/profil/">  
+                <div class="item-media"><i class="icon f7-icons" style="color: rgb(255, 0, 0);">logo_google</i></div>
+                <div class="item-inner">
+                  <div class="item-title">Google</div>
+
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link item-content">
+                <div class="item-media"><i class="icon f7-icons" style="color: blue;">logo_facebook</i></div>
+                <div class="item-inner">
+                  <div class="item-title">Facebook</div>
+                  <!-- <div class="item-after">Cleaner</div> -->
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link item-content">
+                <div class="item-media"><i class="icon f7-icons" style="color: rgb(0, 195, 255);">logo_twitter</i></div>
+                <div class="item-inner">
+                  <div class="item-title">Twitter</div>
+                  <!-- <div class="item-after">Cleaner</div> -->
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link item-content">
+                <div class="item-media"><i class="icon f7-icons" style="color: rgb(93, 15, 219);">logo_github</i></div>
+                <div class="item-inner">
+                  <div class="item-title">Github</div>
+                  <!-- <div class="item-after">Cleaner</div> -->
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Setting END -->
+    </div>
+  </div>
+</template>

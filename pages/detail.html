@@ -1,0 +1,122 @@
+<style>
+  .page-detail {
+    margin: 0px 20px 0 20px;
+  }
+  .detailcard {
+    height: 200px;
+    width: auto;
+    /* background: url("../img/kopi/menu5.jpeg") repeat no-repeat center; */
+    background-size: cover;
+    border-radius: 30px;
+  }
+  .titledetail {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .size {
+    border: 1px solid rgb(170, 169, 169);
+    padding: 10px;
+    width: 50px;
+    border-radius: 10px;
+  }
+  .size:active {
+    border: 1px solid #c67c4e;
+    background-color: #c67c4e71;
+    color: white;
+  }
+</style>
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left" style="margin-left: 20px">
+          <a href="/dashboard/"><i class="icon f7-icons">chevron_left</i></a>
+        </div>
+        <div class="title" style="font-size: 17px">Detail</div>
+        <div class="right" style="margin-right: 20px"><i class="icon f7-icons">suit_heart</i></div>
+      </div>
+    </div>
+    <div class="page-content page-detail" id="pg"></div>
+    <div class="toolbar toolbar-bottom"  style="background-color: rgb(255, 255, 255)">
+      <div class="toolbar-inner" id="toolbar" style="display: flex">
+
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default (props, { $f7, $on }) => {
+    detail = {
+      1: { gambar: "menu1.jpeg",kategori: "Cappucino", nama: "Cappucino", rating: "5", deskripsi: "Bla bla", harga: "$5.54" },
+      2: { gambar: "menu5.jpeg",kategori: "Latte", nama: "Latte", rating: "4.8", deskripsi: "Bla bla", harga: "$5.24" },
+      3: { gambar: "menu3.jpeg",kategori: "Black Coffee", nama: "Black Coffee", rating: "4.9", deskripsi: "Bla bla", harga: "$3.54" },
+      4: { gambar: "menu4.jpeg",kategori: "Black Coffee", nama: "Ekspresso", rating: "4", deskripsi: "Bla bla", harga: "$5" },
+      5: { gambar: "ice1.jpeg",kategori: "Ice", nama: "Iced Coffee", rating: "5", deskripsi: "Bla bla", harga: "$6.21" },
+      6: { gambar: "ice2.jpeg",kategori: "Ice", nama: "Cold Coffee", rating: "5", deskripsi: "Bla bla", harga: "$6.34" },
+    };
+
+    $on("pageInit", () => {
+      Object.entries(detail).forEach(([key, value]) => {
+        if (key == app.views.main.router.currentRoute.params.id) {
+          $("#pg").html(`
+          <div class="detailcard" id="gambar" style="margin-bottom: 20px;"></div>
+          <span class="titledetail" id="nama">${value.nama}<br /></span>
+          <span>Ice/Hot <br /> <br/> </span>
+          <i class="icon f7-icons" style="font-size: 20px; color: #fcd600; padding-right: 5px">star_fill</i><span style="font-size: 15px; color: black; position: absolute" id="rating">${value.rating}</span>
+          <span style="padding-left: 27px;font-size: 10px;">(230)</span>
+          <hr />
+          <p class="titledetail">Deskription</p>
+          <span id="deskripsi">${value.deskripsi}</span>
+          <p class="titledetail">Size</p>
+          <div class="grid grid-cols-3" style="text-align: center;justify-content: center;justify-items: center;">
+            <div class="size">S</div>
+            <div class="size">M</div>
+            <div class="size">L</div>
+          </div>
+                    `);
+          $("#gambar").css({
+            "background-image": "url(img/kopi/" + `${value.gambar}` + ")",
+            "background-repeat": "no-repeat",
+            "background-position": "center",
+            "background-size": "cover",
+          });
+
+          $("#toolbar").html(`
+          <div style="margin-left: 20px">
+          <span>Total <br /></span>
+          <span style="font-weight: 500; font-size: 15px; color: #c67c4e" id="harga">${value.harga}</span>
+        </div>
+        <a style="margin-right: 20px; padding: 15px; width: 150px; background-color: #c67c4e; color: white; font-size: 15px; text-align: center; border-radius: 10px">Buy Now</a>
+          `)
+        }
+      });
+
+
+      //   $("#nama").html(app.views.main.router.currentRoute.params.nama);
+
+      //   $("#rating").html(app.views.main.router.currentRoute.params.rating);
+      //   $("#harga").html(app.views.main.router.currentRoute.params.harga);
+      //   $("#deskripsi").html(app.views.main.router.currentRoute.params.deskripsi);
+
+    //   $('.size').on("click",function () {
+
+    $(".size").click(function(){
+        // Menghapus gaya dari semua button
+        $(".size").css({
+            "border": "1px solid rgb(170, 169, 169)",
+            "background-color": "",
+            "color": "",
+        });
+
+        // Menambahkan gaya pada button yang diklik
+        $(this).css({
+            "border": "1px solid #c67c4e",
+            "background-color": "#c67c4e71",
+            "color": "white",
+        });
+    });
+    });
+
+    return $render;
+  };
+</script>

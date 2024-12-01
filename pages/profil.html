@@ -1,0 +1,112 @@
+<template>
+  <div class="page">
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon f7-icons color-black">arrow_left</i>
+            <span class="text-color-black" style="font-size: 20px; padding-left: 30px;">Profil</span>
+          </a>
+        </div>
+        <div class="title">
+          
+        </div>
+        <div class="right">
+          <a href="#" class="link">
+            <i class="icon f7-icons color-black">cart</i>
+            <span class="badge color-red">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+    <div class="page-content" >
+
+      <button class="button button-fill" id="play">PLAY</button>
+      <br/>
+      <br/>
+      <button class="button button-fill" id="pause">PAUSE</button> 
+      <br/> 
+      <br/> 
+      <button class="button button-fill" id="next">NEXT</button>  
+      <br/> 
+      <br/> 
+      <button class="button button-fill" id="sbl">PREVIOUS</button>  
+      <!-- <img class="radius15" src="img/card.jpg" style="margin: 0 2% 0 2%; width: 96%" /> -->
+       <div class="fotoprofil" style="justify-content: center; justify-items: center;">
+        <div class="borderfoto">
+          <img src="img/fotoprfil.webp" width="200" style="border-radius: 50%; border: 1px solid black;" alt=""/> 
+        </div>
+       </div>
+       <div class="nameuser" style="text-align: center;">
+        <span style="font-size: 30px; font-weight: 599;">Ni'am <br/></span><span style=" font-size: 16px ;">Student</span>
+       </div>
+
+       <form class="list form-store-data" id="my-form">
+        <ul>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Name</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="name" placeholder="NI'AM" v/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">E-mail</div>
+                <div class="item-input-wrap">
+                  <input type="email" name="email" placeholder="muhammadhusnunniam20@gmail.com" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Alamat</div>
+                <div class="item-input-wrap">
+                  <input class="no-store-data" type="text" name="text" placeholder="Mojokerto" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Gender</div>
+                <div class="item-input-wrap">
+                  <select name="gender">
+                    <option value="male" selected="selected">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Switch</div>
+                <div class="item-after">
+                  <label class="toggle">
+                    <input type="checkbox" name="switch" value="yes" /><i class="toggle-icon"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </form>
+      <div class="BT" style="justify-content: center; justify-items: center;">
+
+        <a href="#" class="button" style="width: 80%; color: rgb(54, 54, 238);background-color: rgb(74, 218, 223);">Save</a> <br/>
+        <a href="#" class="button" style="width: 80%; color: rgb(54, 54, 238);background-color: rgb(201, 21, 21);">Cancel</a>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,496 @@
+<template>
+  <div class="page">
+    <!-- ICON MENU BAWAH -->
+    <div class="toolbar tabbar-icons toolbar-bottom" style="background-color: rgb(255, 255, 255)">
+      <div class="toolbar-inner">
+        <a href="/" class="aktif">
+          <i class="icon f7-icons md-only">house</i>
+        </a>
+        <a href="/menulist/" class="atf">
+          <i class="icon f7-icons md-only">rectangle_grid_2x2</i>
+        </a>
+        <a href="/keranjang/" class="aktif">
+          <i class="icon f7-icons md-only">cart</i>
+        </a>
+        <a href="/favorit/" class="aktif">
+          <i class="icon f7-icons md-only">bookmark</i>
+        </a>
+        <a href="/setting/" class="aktif">
+          <i class="icon f7-icons md-only">gear_alt</i>
+        </a>
+      </div>
+    </div>
+    <!-- ICON BAWAH END -->
+    <!-- NAVBAR -->
+    <!-- NAVBAR ATAS -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left">
+          <div class="judul" style="padding: 0 !important">
+            <!-- Welcome <br /> -->
+            <div class="judul2" id="username">Ni'am</div>
+          </div>
+        </div>
+        <div class="title"></div>
+        <div class="right">
+          <a href="#" class="link popover-open" data-popover=".popover-menu"><i class="icon f7-icons color-black" style="font-size: 45px; margin-top: 20px">person_circle</i></a>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <div class="page-content">
+      <!-- POPOVER -->
+      <div class="popover popover-menu">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+          <div class="list">
+            <ul>
+              <li><a href="/profil/" class="list-button popover-close">My Profile</a></li>
+              <li><a href="/Contact/" class="list-button popover-close">Contact</a></li>
+              <li><a href="/Setting/" class="list-button popover-close">Setting</a></li>
+              <li><a href="#" id="logout" class="list-button popover-close logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- POPOVER END -->
+      <!-- MENU LIST Richeess -->
+      <div class="list list-strong list-outline-ios list-dividers-ios inset-md accordion-list">
+        <ul>
+          <div class="title" style="text-align: center; font-size: 150%; font-weight: 700; padding-top: 5%"><img src="img/RicheeseLogo.webp" style="width: 30%; border-radius: 30%" /></div>
+          <div class="titles" style="margin-bottom: 5px !important">Richeese Popular</div>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/menup2.webp" alt="" style="width: 50px" />
+                <div class="item-title">Flying Chicken Whole</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Ayam goreng ukuran satu ekor dengan taburan Volcano Powder pedas dihidangkan dengan Saus Keju khas Richeese Factory</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/menup1.webp" alt="" style="width: 50px" />
+                <div class="item-title">Flying Chicken Fire</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Ayam goreng ukuran satu ekor yang dibalut dengan saus BBQ pilihan level kepedasan 0-5 dihidangkan juga dengan Saus Keju khas Richeese Factory</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color:tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/ice1.webp" alt="" style="width: 50px" />
+                <div class="item-title">Dino Ice Cream</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Ice cream rasa Mac and Cheese dengan topping Choco Malt Dinosaur</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <div class="titles" style="margin-bottom: 5px !important">Richeese Fire Chiken</div>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/ricis/fire1.webp" alt="" style="width: 50px" />
+                <div class="item-title">Fire Chiken</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Ayam goreng potongan personal yang dibalut saus BBQ dengan pilihan level kepedasan 0-5 dihidangkan juga dengan Saus Keju khas Richeese Factory</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/ricis/fire2.webp" alt="" style="width: 50px" />
+                <div class="item-title">Fire Wings</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Ayam goreng potongan sayap yang dibalut saus BBQ dengan pilihan level kepedasan 0-5 dihidangkan juga dengan Saus Keju khas Richeese Factory</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/ricis/fire3.webp" alt="" style="width: 50px" />
+                <div class="item-title">Fire Chiken Whole</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Ayam goreng ukuran satu ekor yang dibalut dengan saus BBQ pilihan level kepedasan 0-5 dihidangkan juga dengan Saus Keju khas Richeese Factory</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <div class="titles" style="margin-bottom: 5px !important">Richeese Drinks</div>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/ricis/drink1.webp" alt="" style="width: 50px" />
+                <div class="item-title">Pink Lava</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Minuman segar dengan rasa berry dan teksturnya yang creamy</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/ricis/drink2.webp" alt="" style="width: 50px" />
+                <div class="item-title">Fruitarian</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Minuman segar perpaduan rasa teh dan rasa buah</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- MENU LIST END Richeese -->
+      <!-- MENU LIST MCD -->
+      <div class="list list-strong list-outline-ios list-dividers-ios inset-md accordion-list">
+        <ul>
+          <div class="title" style="text-align: center; font-size: 150%; font-weight: 700; padding-top: 5%"><img src="img/mcdonalds.png" style="width: 30%; border-radius: 30%" /></div>
+          <div class="titles" style="margin-bottom: 5px !important">Sarapan Pagi</div>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/mcd/sarap1.webp" alt="" style="width: 50px" />
+                <div class="item-title">Egg & Cheese Muffin</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Perpaduan scrambled egg dan keju gurih dalam setangkup English Muffin hangat. Tersedia dari jam 5-11 pagi.</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/mcd/sarap2.webp" alt="" style="width: 50px" />
+                <div class="item-title">Big Breakfast</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Perpaduan English Muffin panggang yang disajikan dengan sosis ayam gurih, renyahnya Hashbrown serta lembutnya scrambled egg. Tersedia dari jam 5-11 pagi.</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/mcd/sarap3.webp" alt="" style="width: 50px" />
+                <div class="item-title">Bubur Ayam Mcd</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Bubur ayam klasik disajikan dengan seledri dan bawang goreng renyah, tersedia jam 5-11 pagi</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <div class="titles" style="margin-bottom: 5px !important">Daging Sapi</div>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/mcd/dasap1.png" alt="" style="width: 50px" />
+                <div class="item-title">Paket HeBat - Beef Burger Deluxe</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Paket HeBat (Hemat Banget) Beef Burger Deluxe. Burger dengan 100% daging sapi Australia dengan selada segar, tomat, acar timun, potongan bawang bombai dan mustard. Lengkap dengan small french fries dan small drink</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/mcd/dasap2.webp" alt="" style="width: 50px" />
+                <div class="item-title">Big Mac</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Burger Ikonik McDonald's. Dua lapis daging sapi gurih disajikan dengan saus spesial, selada segar, keju, acar timun, bawang, diapit roti bertabur wijen</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/mcd/dasap3.webp" alt="" style="width: 50px" />
+                <div class="item-title">Triple Cheeseburger</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Perpaduan roti burger dengan 3 lapisan daging gurih berasal dari 100% daging sapi Australia dan 3 lapis keju, saus tomat, acar, potongan bawang dan mustard.</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <div class="titles" style="margin-bottom: 5px !important">McD Drinks</div>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/mcd/drink4.webp" alt="" style="width: 50px" />
+                <div class="item-title">Coca-Cola McFloat</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Minuman berkarbonasi dengan rasa cola dengan tambahan es krim vanilla McDonald's</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/mcd/drink6.webp" alt="" style="width: 50px" />
+                <div class="item-title">Iced Coffee Jelly Float</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Es kopi 100% Arabika dengan susu yang segar dan tambahan jelly serta es krim yang yummy</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a class="item-link item-content">
+              <div class="item-inner">
+                <img src="img/mcd/drink5.webp" alt="" style="width: 50px" />
+                <div class="item-title">Fanta McFloat</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Minuman berkarbonasi dengan rasa strawberry dengan tambahan es krim vanilla McDonald's</p>
+              </div>
+              <div class="footer" style="margin: 7px !important; justify-items: center !important">
+                <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="margin-left: 75%">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" value="1" min="1" max="100" step="1" />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <button class="button button-fill btnkeranjang" style="color: black; background-color: tomato"><i class="icon f7-icons" style="margin-right: 10px">cart</i>Tambah Ke Keranjang</button>
+                <div></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- MENU LIST END Richeese -->
+    </div>
+  </div>
+</template>

@@ -1,0 +1,93 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left" style="margin-left: 20px">
+          <a href="/dashboard/"><i class="icon f7-icons">chevron_left</i></a>
+        </div>
+        <div class="title" style="font-size: 17px">Stok</div>
+        <div class="right" style="margin-right: 20px"></div>
+      </div>
+    </div>
+    <div class="page-content">
+
+      <div class="grid grid-cols-2" id="daftar-stok">
+        <a href="/detail/1/" >
+          <div class="card" name="cappucino">
+            <div class="card-header" style="height: 120px; background: url('img/kopi/menu1.jpeg') repeat no-repeat center; background-size: cover">
+              <div class="rating" style="position: absolute;top: 0;right: 30px;">
+                <i class="icon f7-icons" style="font-size: 13px;color: #c67c4e;padding-right: 5px;">star_fill</i><span style="font-size: 10px; color: white;position: absolute;top: 10px;">4.8</span>
+            </div>
+            </div>
+            <div class="card-content">
+              <div class="card-title">Cappucino</div>
+              <div class="card-deskrip"><p>Cappucino</p></div>
+            </div>
+            <div class="card-footer">
+              <div class="harga">$3.46</div>
+              <i class="ikon-plus" style="background-color: gray;;">Sold Out</i>
+            </div>
+          </div>
+
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default (props, { $f7, $on }) => {
+
+    stok = {
+      1: { gambar: "menu1.jpeg", kategori: "Cappucino", nama: "Cappucino", rating: "5", deskripsi: "Bla bla", harga: "$5.54",btn: "Buy Now", stok: "ada" },
+      2: { gambar: "menu5.jpeg", kategori: "Latte", nama: "Latte", rating: "4.8", deskripsi: "Bla bla", harga: "$5.24",btn: "Buy Now", stok: "ada" },
+      3: { gambar: "menu3.jpeg", kategori: "Black Coffee", nama: "Black Coffee", rating: "4.9", deskripsi: "Bla bla", harga: "$3.54",btn: "Buy Now", stok: "ada" },
+      4: { gambar: "menu4.jpeg", kategori: "Black Coffee", nama: "Ekspresso", rating: "4", deskripsi: "Bla bla", harga: "$5",btn: "Buy Now", stok: "ada" },
+      5: { gambar: "ice1.jpeg", kategori: "Ice", nama: "Iced Coffee", rating: "5", deskripsi: "Bla bla", harga: "$6.21",btn: "Buy Now", stok: "ada" },
+      6: { gambar: "ice2.jpeg", kategori: "Ice", nama: "Cold Coffee", rating: "5", deskripsi: "Bla bla", harga: "$6.34",btn: "Buy Now", stok: "ada" },
+      7: { gambar: "ice3.jpeg", kategori: "Ice", nama: "Cream Coffee", rating: "4.54", deskripsi: "Bla bla", harga: "$6.64",btn: "Sold Out", stok: "habis" },
+      8: { gambar: "ice4.jpeg", kategori: "Ice", nama: "Latte Ice", rating: "4.86", deskripsi: "Bla bla", harga: "$6.84",btn: "Sold Out", stok: "habis" },
+
+    };
+
+    $on("page:init", () => {
+      $("#daftar-stok").html("");
+      Object.entries(stok).forEach(([key, value]) => {
+        if (value.stok == app.views.main.router.currentRoute.params.stok) {
+          $("#daftar-stok").append(`
+           <a href="/detail/1/">
+          <div class="card" name="cappucino">
+            <div class="card-header"
+              style="height: 120px; background: url('img/kopi/${value.gambar}') repeat no-repeat center; background-size: cover">
+              <div class="rating" style="position: absolute;top: 0;right: 30px;">
+                <i class="icon f7-icons" style="font-size: 13px;color: #c67c4e;padding-right: 5px;">star_fill</i><span
+                  style="font-size: 10px; color: white;position: absolute;top: 10px;">${value.rating}</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-title">${value.nama}</div>
+              <div class="card-deskrip">
+                <p>${value.deskripsi}</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="harga">${value.harga}</div>
+              <i class="ikon-plus" style="background-color: ${(value.stok == 'habis') ? 'gray' : '#c67c4e' }">${value.btn}</i>
+            </div>
+          </div>
+        </a>
+          `)
+
+        }
+
+
+
+      });
+
+    })
+
+
+
+
+    return $render;
+  }
+</script>

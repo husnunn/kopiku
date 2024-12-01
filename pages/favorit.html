@@ -1,0 +1,168 @@
+<template>
+  <div class="page">
+    <!-- ICON MENU BAWAH -->
+    <div class="toolbar tabbar-icons toolbar-bottom" style="background-color: rgb(255, 255, 255)">
+      <div class="toolbar-inner">
+        <a href="/" class="aktif">
+          <i class="icon f7-icons md-only">house</i>
+        </a>
+        <a href="/menulist/" class="aktif">
+          <i class="icon f7-icons md-only">rectangle_grid_2x2</i>
+        </a>
+        <a href="/keranjang/" class="aktif">
+          <i class="icon f7-icons md-only">cart</i>
+        </a>
+        <a href="/favorit/" class="atf">
+          <i class="icon f7-icons md-only">bookmark</i>
+        </a>
+        <a href="/setting/" class="aktif">
+          <i class="icon f7-icons md-only">gear_alt</i>
+        </a>
+      </div>
+    </div>
+    <!-- NAVBAR ATAS -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left">
+          <div class="judul" style="padding: 0 !important">
+            <div class="judul2" id="username">Ni'am</div>
+          </div>
+        </div>
+        <div class="title"></div>
+        <div class="right">
+          <a href="#" class="link popover-open" data-popover=".popover-menu"><i class="icon f7-icons color-black" style="font-size: 45px; margin-top: 20px">person_circle</i></a>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- POPOVER -->
+    <div class="popover popover-menu">
+      <div class="popover-angle"></div>
+      <div class="popover-inner">
+        <div class="list">
+          <ul>
+            <li><a href="/profil/" class="list-button popover-close">My Profile</a></li>
+            <li><a href="/Contact/" class="list-button popover-close">Contact</a></li>
+            <li><a href="/Setting/" class="list-button popover-close">Setting</a></li>
+            <li><a href="#" id="logout" class="list-button popover-close logout">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- POPOVER END -->
+    <div class="page-content">
+      <!-- <div class="grid grid-cols-2 grid-gap" style="margin: 10px;">
+        <div class="card" style="width: 75%; padding: 10px">
+          <div class="card-content">
+            <div class="img" style="text-align: center">
+              <img src="img/mcd/burger1.png" width="150"  alt="" />
+            </div>
+            <div class="title">
+              <span style="font-size: 15px; font-weight: 500"> Hamburger</span> <br />
+              <span>Mcd Burger</span>
+            </div>
+            <div class="footer"><i class="icon f7-icons" style="font-size: 16px; color: rgb(216, 216, 34)">star_fill</i> <span></span></div>
+          </div>
+        </div>
+        <div class="card" style="width: 75%; padding: 10px 10px 10px 10px">
+          <div class="card-content">
+            <div class="img" style="text-align: center">
+              <img src="img/mcd/burger1.png" width="150"  alt="" />
+            </div>
+            <div class="title">
+              <span style="font-size: 15px; font-weight: 500"> Hamburger</span> <br />
+              <span>Mcd Burger</span>
+            </div>
+            <div class="footer"><i class="icon f7-icons" style="font-size: 16px; color: rgb(216, 216, 34)">star_fill</i> <span></span></div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="card card-expandable" style="background-color: white ;">
+        <div class="card-content">
+          <div style="background: url(img/mcd/burger1.png) no-repeat center center; background-size: cover; height: 240px">
+            <a href=""><i class="icon f7-icons" style="color: tomato; padding: 10px 0px 0 10px">suit_heart_fill</i></a>
+          </div>
+          <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+            <i class="icon f7-icons">xmark_circle_fill</i>
+          </a>
+          <div class="card-header display-block" style="height: 60px">Beef Burger Deluxe</div>
+          <div class="card-content-padding">
+            <p>Paket HeBat (Hemat Banget) Beef Burger Deluxe. Burger dengan 100% daging sapi Australia dengan selada segar, tomat, acar timun, potongan bawang bombai dan mustard. Lengkap dengan small french fries dan small drink</p>
+            <p>
+              <a href="#"></a>
+            </p>
+            <p>
+              <a class="button button-fill color-yellow button-round button-large" style="background-color: tomato !important; margin: 0px 0px 10px 0px"><i class="icon f7-icons">cart</i> Masukkan Keranjang</a>
+              <a class="button button-fill button-round button-large card-close">Close</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-expandable">
+        <div class="card-content">
+          <div style="background: url(img/mcd/burger1.png) no-repeat center center; background-size: cover; height: 240px">
+            <a href=""><i class="icon f7-icons" style="color: tomato; padding: 10px 0px 0 10px">suit_heart_fill</i></a>
+          </div>
+          <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+            <i class="icon f7-icons">xmark_circle_fill</i>
+          </a>
+          <div class="card-header display-block" style="height: 60px">Beef Burger Deluxe</div>
+          <div class="card-content-padding">
+            <p>Paket HeBat (Hemat Banget) Beef Burger Deluxe. Burger dengan 100% daging sapi Australia dengan selada segar, tomat, acar timun, potongan bawang bombai dan mustard. Lengkap dengan small french fries dan small drink</p>
+            <p>
+              <a href="#"></a>
+            </p>
+            <p>
+              <a class="button button-fill color-yellow button-round button-large" style="background-color: tomato !important; margin: 0px 0px 10px 0px"><i class="icon f7-icons">cart</i> Masukkan Keranjang</a>
+              <a class="button button-fill button-round button-large card-close">Close</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-expandable">
+        <div class="card-content">
+          <div style="background: url(img/mcd/burger1.png) no-repeat center center; background-size: cover; height: 240px">
+            <a href=""><i class="icon f7-icons" style="color: tomato; padding: 10px 0px 0 10px">suit_heart_fill</i></a>
+          </div>
+          <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+            <i class="icon f7-icons">xmark_circle_fill</i>
+          </a>
+          <div class="card-header display-block" style="height: 60px">Beef Burger Deluxe</div>
+          <div class="card-content-padding">
+            <p>Paket HeBat (Hemat Banget) Beef Burger Deluxe. Burger dengan 100% daging sapi Australia dengan selada segar, tomat, acar timun, potongan bawang bombai dan mustard. Lengkap dengan small french fries dan small drink</p>
+            <p>
+              <a href="#"></a>
+            </p>
+            <p>
+              <a class="button button-fill color-yellow button-round button-large" style="background-color: tomato !important; margin: 0px 0px 10px 0px"><i class="icon f7-icons">cart</i> Masukkan Keranjang</a>
+              <a class="button button-fill button-round button-large card-close">Close</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page CONTENT END -->
+  </div>
+</template>
+<!-- <div class="card card-outline-md demo-card-header-pic">
+      <div style="background-image:url(img/mcd/burger1.png); background-size: cover; object-fit: cover;"
+        class="card-header"></div>
+      <div class="card-content card-content-padding">
+        <p class="title" style="font-weight: 600;">Burger</p>
+        <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis
+          nibh hendrerit...</p>
+      </div>
+      <div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>
+    </div> 
+    <div class="card card-outline-md demo-card-header-pic">
+      <div style="background-image:url(img/mcd/burger3.png)" valign="bottom"
+        class="card-header">Journey To Mountains</div>
+      <div class="card-content card-content-padding">
+        <p class="date">Posted on January 21, 2015</p>
+        <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis
+          nibh hendrerit...</p>
+      </div>
+      <div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>
+    </div> -->

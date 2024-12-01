@@ -1,0 +1,277 @@
+<template>
+  <div class="page">
+    <!-- ICON MENU BAWAH -->
+    <div class="toolbar tabbar-icons toolbar-bottom" style="background-color: rgb(255, 255, 255)">
+      <div class="toolbar-inner">
+        <a href="/" class="aktif">
+          <i class="icon f7-icons md-only">house</i>
+        </a>
+        <a href="/menulist/" class="aktif">
+          <i class="icon f7-icons md-only">rectangle_grid_2x2</i>
+        </a>
+        <a href="/keranjang/" class="atf">
+          <i class="icon f7-icons md-only">cart</i>
+        </a>
+        <a href="/favorit/" class="aktif">
+          <i class="icon f7-icons md-only">bookmark</i>
+        </a>
+        <a href="/setting/" class="aktif">
+          <i class="icon f7-icons md-only">gear_alt</i>
+        </a>
+      </div>
+    </div>
+    <!-- NAVBAR ATAS -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left">
+          <div class="judul" style="padding: 0 !important">
+            <!-- Welcome <br /> -->
+            <div class="judul2" id="username">Ni'am</div>
+          </div>
+        </div>
+        <div class="title"></div>
+        <div class="right">
+          <a href="#" class="link popover-open" data-popover=".popover-menu"><i class="icon f7-icons color-black" style="font-size: 45px; margin-top: 20px">person_circle</i></a>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+    <div class="page-content">
+      <!-- POPOVER -->
+      <div class="popover popover-menu">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+          <div class="list">
+            <ul>
+              <li><a href="/profil/" class="list-button popover-close">My Profile</a></li>
+              <li><a href="/Contact/" class="list-button popover-close">Contact</a></li>
+              <li><a href="/Setting/" class="list-button popover-close">Setting</a></li>
+              <li><a href="#" id="logout" class="list-button popover-close logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- POPOVER END -->
+      <!-- Card CONTENT -->
+      <div class="card" style="position: relative; background-color: white; box-shadow: 5px 1px 25px 5px #888888">
+        <div class="card-content">
+          <div class="grid grid-cols-4">
+            <div class="left">
+              <img src="img/menup2.webp" class="imgcart" width="130" alt="" />
+            </div>
+            <div class="title" style="position: relative; padding-left: 39%; width: 200px !important">
+              <div class="">
+                <h5 style="font-size: 14px">
+                  Flying Chicken <br />
+                  Whole
+                </h5>
+              </div>
+              <div class="" style="font-size: 10px; margin-top: -25px !important">
+                <p>
+                  Ayam goreng ukuran <br />
+                  satu ekor
+                </p>
+              </div>
+              <div class=""><span style="font-size: 20px; font-weight: 500">$3</span></div>
+            </div>
+            <div class="right" style="margin-left: 50%; margin-top: 100px">
+              <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="width: 0px;border: none;">
+                <div class="stepper-button-minus"></div>
+                <div class="stepper-input-wrap">
+                  <input type="text" value="1" min="1" max="100" step="1" />
+                </div>
+                <div class="stepper-button-plus"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="position: relative; background-color: white; box-shadow: 5px 1px 25px 5px #888888">
+        <div class="card-content">
+          <div class="grid grid-cols-4">
+            <div class="left">
+              <img src="img/menup2.webp" class="imgcart" width="130" alt="" />
+            </div>
+            <div class="title" style="position: relative; padding-left: 39%; width: 200px !important">
+              <div class="">
+                <h5 style="font-size: 14px">
+                  Flying Chicken <br />
+                  Whole
+                </h5>
+              </div>
+              <div class="" style="font-size: 10px; margin-top: -25px !important">
+                <p>
+                  Ayam goreng ukuran <br />
+                  satu ekor
+                </p>
+              </div>
+              <div class=""><span style="font-size: 20px; font-weight: 500">$3</span></div>
+            </div>
+            <div class="right" style="margin-left: 50%; margin-top: 100px">
+              <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="width: 0px;border: none;">
+                <div class="stepper-button-minus"></div>
+                <div class="stepper-input-wrap">
+                  <input type="text" value="1" min="1" max="100" step="1" />
+                </div>
+                <div class="stepper-button-plus"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="position: relative; background-color: white; box-shadow: 5px 1px 25px 5px #888888">
+        <div class="card-content">
+          <div class="grid grid-cols-4">
+            <div class="left" style="position: relative; left: -10px">
+              <img src="img/menup2.webp" width="130" alt="" />
+            </div>
+            <div class="title" style="position: relative; padding-left: 39%; width: 200px !important">
+              <div class="">
+                <h5 style="font-size: 14px">
+                  Flying Chicken <br />
+                  Whole
+                </h5>
+              </div>
+              <div class="" style="font-size: 10px; margin-top: -25px !important">
+                <p>
+                  Ayam goreng ukuran <br />
+                  satu ekor
+                </p>
+              </div>
+              <div class=""><span style="font-size: 20px; font-weight: 500">$3</span></div>
+            </div>
+            <div class="right" style="margin-left: 50%; margin-top: 100px">
+              <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="width: 0px;border: none;">
+                <div class="stepper-button-minus"></div>
+                <div class="stepper-input-wrap">
+                  <input type="text" value="1" min="1" max="100" step="1" />
+                </div>
+                <div class="stepper-button-plus"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="position: relative; background-color: white; box-shadow: 5px 1px 25px 5px #888888">
+        <div class="card-content">
+          <div class="grid grid-cols-4">
+            <div class="left" style="position: relative; left: -10px">
+              <img src="img/menup2.webp" width="130" alt="" />
+            </div>
+            <div class="title" style="position: relative; padding-left: 39%; width: 200px !important">
+              <div class="">
+                <h5 style="font-size: 14px">
+                  Flying Chicken <br />
+                  Whole
+                </h5>
+              </div>
+              <div class="" style="font-size: 10px; margin-top: -25px !important">
+                <p>
+                  Ayam goreng ukuran <br />
+                  satu ekor
+                </p>
+              </div>
+              <div class=""><span style="font-size: 20px; font-weight: 500">$3</span></div>
+            </div>
+            <div class="right" style="margin-left: 50%; margin-top: 100px">
+              <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="width: 0px;border: none;">
+                <div class="stepper-button-minus"></div>
+                <div class="stepper-input-wrap">
+                  <input type="text" value="1" min="1" max="100" step="1" />
+                </div>
+                <div class="stepper-button-plus"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="position: relative;  background-color: white; box-shadow: 5px 1px 25px 5px #888888">
+        <div class="card-content">
+          <div class="grid grid-cols-4">
+            <div class="left" style="position: relative; left: -10px">
+              <img src="img/menup2.webp" width="130" alt="" />
+            </div>
+            <div class="title" style="position: relative; padding-left: 39%; width: 200px !important">
+              <div class="">
+                <h5 style="font-size: 14px">
+                  Flying Chicken <br />
+                  Whole
+                </h5>
+              </div>
+              <div class="" style="font-size: 10px; margin-top: -25px !important">
+                <p>
+                  Ayam goreng ukuran <br />
+                  satu ekor
+                </p>
+              </div>
+              <div class=""><span style="font-size: 20px; font-weight: 500">$3</span></div>
+            </div>
+            <div class="right" style="margin-left: 50%; margin-top: 100px">
+              <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="width: 0px;border: none;">
+                <div class="stepper-button-minus"></div>
+                <div class="stepper-input-wrap">
+                  <input type="text" value="1" min="1" max="100" step="1" />
+                </div>
+                <div class="stepper-button-plus"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="position: relative; margin-bottom: 200px; background-color: white; box-shadow: 5px 1px 25px 5px #888888">
+        <div class="card-content">
+          <div class="grid grid-cols-4">
+            <div class="left" style="position: relative; left: -10px">
+              <img src="img/menup2.webp" width="130" alt="" />
+            </div>
+            <div class="title" style="position: relative; padding-left: 39%; width: 200px !important">
+              <div class="">
+                <h5 style="font-size: 14px">
+                  Flying Chicken <br />
+                  Whole
+                </h5>
+              </div>
+              <div class="" style="font-size: 10px; margin-top: -25px !important">
+                <p>
+                  Ayam goreng ukuran <br />
+                  satu ekor
+                </p>
+              </div>
+              <div class=""><span style="font-size: 20px; font-weight: 500">$3</span></div>
+            </div>
+            <div class="right" style="margin-left: 50%; margin-top: 100px">
+              <div class="stepper stepper-raised stepper-round stepper-small stepper-init" style="width: 0px;border: none;">
+                <div class="stepper-button-minus"></div>
+                <div class="stepper-input-wrap">
+                  <input type="text" value="1" min="1" max="100" step="1" />
+                </div>
+                <div class="stepper-button-plus"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+      <!-- Card CONTENT END -->
+    </div>
+    <!-- footer -->
+    <div class="card" style="position: fixed; margin: 0; border-radius: 0; width: 100%;bottom: 79px; background-color: white;z-index: 99;">
+      <div class="card-content">
+        <div class="harga">
+          <div class="left" style="position: absolute; bottom: 45px; padding-left: 10px;">
+            <h2>Total</h2>
+          </div>
+          <div class="right" style="text-align: end;padding-right: 10px;">
+            <h2>$30</h2>
+          </div>
+        </div>
+        <hr/>
+        <div class="btn" style="justify-content: center; justify-items: center; color: white; text-align: center">
+          <a href="#" class="button button-md" style="background-color: tomato; width: 100%;"> CHECKOUT </a>
+        </div>
+      </div>
+    </div>
+    <!-- footer end -->
+  </div>
+</template>
