@@ -1,13 +1,16 @@
 .page{
 	font-family: "Sora", sans-serif;
 }
-.page-home{
+.page-login{
 	background: url('../img/kopi/openingkopi.jpg') repeat no-repeat center;
 	background-size: cover;
 	justify-content: center;
 	justify-items: center;
 }
-.page-dashboard{
+.signUp{
+	font-size: 13px !important;
+}
+.page-home{
 	background-color: aliceblue;
 }
 .ireng {

@@ -1,35 +1,34 @@
-
+<style>
+  .btn{
+    background-color: rgb(153, 119, 26);
+    width: 200px !important;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 650px;
+  }
+  .btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .btn:active{
+    background-color: rgb(131, 103, 27);
+    transition: 0.1s all;
+  }
+</style>
 <template>
-  <div class="page">
-    <div class="navbar">
-      <div class="navbar-bg"></div>
-      <div class="navbar-inner sliding">
-        <div class="title">Login Screen</div>
-      </div>
-    </div>
+  <div class="page page-login">
     <div class="page-content">
-      <div class="block">
-        <p>Framework7 comes with ready to use Login Screen layout. It could be used inside of page or inside of popup
-          (Embedded) or as a standalone overlay:</p>
-      </div>
-      <!-- example-hidden-start -->
-      <div class="list list-strong inset-md list-outline-ios links-list example-hidden">
-        <ul>
-          <li>
-            <a href="/login-screen-page/">As Separate Page</a>
-          </li>
-        </ul>
-      </div>
-      <!-- example-hidden-end -->
-      <div class="block">
-        <a class="button button-raised button-large button-fill login-screen-open" data-login-screen=".login-screen">As
-          Overlay</a>
+      <div class="block btn">
+        <a class="login-screen-open" data-login-screen=".login-screen">GET STARTED</a>
       </div>
     </div>
     <div class="login-screen">
       <div class="page login-screen-page">
         <div class="page-content login-screen-content">
-          <div class="login-screen-title">Framework7</div>
+          <div class="login-screen-title">Login dulu boskuu!!</div>
           <form>
             <div class="list">
               <ul>
@@ -55,10 +54,10 @@
             </div>
             <div class="list inset">
               <ul>
-                <li><a class="list-button" @click=${signIn}>Sign In</a></li>
+                <li><a class="list-button" @click=${signIn}>Login</a></li>
+                <li><a class="list-button signUp">Belum Punya Akun? Daftar dulu</a></li>
               </ul>
-              <div class="block-footer">Some text about login information.<br />Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.</div>
+              <div class="block-footer"></div>
             </div>
           </form>
         </div>

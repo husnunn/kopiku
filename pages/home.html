@@ -1,31 +1,142 @@
-<style>
-  .btn{
-    background-color: rgb(153, 119, 26);
-    width: 200px !important;
-    text-align: center;
-    padding: 15px;
-    border-radius: 30px;
-    margin-top: 650px;
-  }
-  .btn a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .btn:active{
-    background-color: rgb(131, 103, 27);
-    transition: 0.1s all;
-  }
-</style>
-
 <template>
   <div class="page page-home">
-    <div class="btn">
-      <a href="/dashboard/" >GET STARTED >></a>
+    <div class="panel panel-right panel-cover panel-init" id="panel-right" data-container-el="#panel-page">
+      <div class="page">
+        <div class="page-content">
+          <div class="block block-strong-ios block-outline-ios">
+            <h1>Filters</h1>
+            <p>Stok</p>
+            <div class="grid grid-cols-2 grid-gap text-align-center">
+              <a href="/stok/ada/" id="stok-ada" class="filter-stok">Ada</a>
+              <a href="/stok/habis/" id="stok-habis" class="filter-stok">Habis</a>
+            </div>
+            <p><a class="panel-close">Close me</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- ICON MENU BAWAH -->
+        <div class="toolbar tabbar-icons toolbar-bottom" style="background-color: rgb(255, 255, 255);">
+            <div class="toolbar-inner">
+              <a href="/" class="aktif" style="margin: 0 0px 0 50px;">
+                <i class="icon f7-icons md-only">house</i>
+
+              </a>
+              <a href="#" class="ling">
+                <i class="icon f7-icons md-only">cart</i>
+
+              </a>
+              <a href="#" class="ling" style="margin-right: 50px;">
+                <i class="icon f7-icons md-only">gobackward</i>
+
+              </a>
+            </div>
+          </div>
+    <div class="page-content" style="top: 0">
+      <div class="ireng">
+        <div class="navbar" style="top: 0">
+          <div class="navbar-inner">
+            <div class="left">
+              <div class="judul">
+                location <br />
+                <div class="judul2">Tambakberas, Jombang</div>
+              </div>
+            </div>
+            <div class="title"></div>
+            <!-- <div class="right"><img src="img/fotoprfil.webp" class="img-user"/></div> -->
+          </div>
+        </div>
+        <div class="search-filter" style="display: flex">
+          <form data-search-container=".search-list" data-search-in=".item-title" class="searchbar searchbar-init">
+            <div class="searchbar-inner" style="color: white !important">
+              <div class="searchbar-input-wrap" style="color: white !important">
+                <input type="search" placeholder="    Search" style="color: white !important" />
+                <i class="searchbar-icon" style="color: rgb(255, 255, 255) !important; border-radius: 50% 0% 0 50%;"></i>
+                <span class="input-clear-button" style="color: white !important"></span>
+              </div>
+              <span class="searchbar-disable-button" style="color: white !important">Cancel</span>
+            </div>
+          </form>
+          <a href="" style="text-decoration: none;" class="panel-open" id="panel-stok">
+            <i class="icon f7-icons filter" style="color: white; margin: 18px 20px 0 0">slider_horizontal_3</i>
+          </a>
+        </div>
+      </div>
+      <swiper-container class="demo-swiper-multiple" space-between="50" autoplay style="height: 200px; margin: -100px 20px 0 20px; border-radius: 30px !important">
+        <!-- <swiper-slide style="background: url('img/kopi/promo3.webp') repeat no-repeat center; background-size: cover;border-radius: 30px;"></swiper-slide> -->
+        <swiper-slide style="background: url('img/kopi/promo2.webp') repeat no-repeat center; background-size: cover; border-radius: 30px"></swiper-slide>
+      </swiper-container>
+
+      <!-- CATEGORIES BUTTON -->
+      <div class="block">
+        <div class="breadcrumbs">
+          <div class="breadcrumbs-item">
+            <a class=" aktif"> All Coffee </a>
+          </div>
+          <div class="breadcrumbs-item">
+            <a class="ling" id="katcappucino"> Cappucino </a>
+          </div>
+          <div class="breadcrumbs-item">
+            <a class="ling" id="katice"> Ice Coffee </a>
+          </div>
+          <div class="breadcrumbs-item">
+            <a class="ling" id="katlatte"> Latte </a>
+          </div>
+          <div class="breadcrumbs-item">
+            <a class="ling" id="katblack"> Black Coffee </a>
+          </div>
+        </div>
+      </div>
+      <!-- CATEGORIES BUTTON END -->
+      <!-- CARD PRODUCT -->
+      <div class="grid grid-cols-2" id="menu">
+
+      </div>
+      <!-- CARD PRODUCT END -->
+
+
     </div>
   </div>
 </template>
+<script>
+  export default (props, { $f7, $on }) => {
 
-<!--  -->
+    menu = {
+      1: { gambar: "menu1.jpeg", kategori: "Cappucino", nama: "Cappucino", rating: "5", deskripsi: "Hot/Ice", harga: "$5.54",btn: "Buy Now", stok: "ada" },
+      2: { gambar: "menu5.jpeg", kategori: "Latte", nama: "Latte", rating: "4.8", deskripsi: "Hot", harga: "$5.24",btn: "Buy Now", stok: "ada" },
+      3: { gambar: "menu3.jpeg", kategori: "Black Coffee", nama: "Black Coffee", rating: "4.9", deskripsi: "Hot", harga: "$3.54",btn: "Buy Now", stok: "ada" },
+      4: { gambar: "menu4.jpeg", kategori: "Black Coffee", nama: "Ekspresso", rating: "4", deskripsi: "Hot", harga: "$5",btn: "Buy Now", stok: "ada" },
+      5: { gambar: "ice1.jpeg", kategori: "Ice", nama: "Iced Coffee", rating: "5", deskripsi: "Ice", harga: "$6.21",btn: "Buy Now", stok: "ada" },
+      6: { gambar: "ice2.jpeg", kategori: "Ice", nama: "Cold Coffee", rating: "5", deskripsi: "Ice", harga: "$6.34",btn: "Buy Now", stok: "ada" },
+      7: { gambar: "ice3.jpeg", kategori: "Ice", nama: "Cream Coffee", rating: "4.54", deskripsi: "Hot/Ice", harga: "$6.64",btn: "Sold Out", stok: "habis" },
+      8: { gambar: "ice4.jpeg", kategori: "Ice", nama: "Latte Ice", rating: "4.86", deskripsi: "Ice", harga: "$6.84",btn: "Sold Out", stok: "habis" },
 
+    };
+
+    $on("page:init",()=>{
+      Object.entries(menu).forEach(([key,value]) => {
+        $("#menu").append(`
+                <a href="/detail/${key}/" >
+        <div class="card" name="cappucino">
+          <div class="card-header" style="height: 120px; background: url('img/kopi/${value.gambar}') repeat no-repeat center; background-size: cover">
+            <div class="rating" style="position: absolute;top: 0;right: 30px;">
+              <i class="icon f7-icons" style="font-size: 13px;color: #c67c4e;padding-right: 5px;">star_fill</i><span style="font-size: 10px; color: white;position: absolute;top: 10px;">${value.rating}</span>
+          </div>
+          </div>
+          <div class="card-content">
+            <div class="card-title">${value.nama}</div>
+            <div class="card-deskrip"><p>${value.deskripsi}</p></div>
+          </div>
+          <div class="card-footer">
+            <div class="harga">${value.harga}</div>
+            <i class="ikon-plus" style="background-color: ${(value.stok == "habis") ? 'gray' : '#c67c4e'}">${value.btn}</i>
+          </div>
+        </div>
+      </a>
+        `)
+      })
+    })
+
+    return $render
+  }
+</script>
